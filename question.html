@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44-dars</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- a11y - accessibility -->
+  <!-- i18n - internationalization -->
+
+  <header class="site-header">
+    <div>Question</div>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <form class="question-form" action="https://vetclinic.ru/questions" method="POST">
+        <div class="question-form__group">
+          <input class="question-form__field" type="text" name="name" aria-label="Ваше имя" placeholder="Ваше имя" required>
+        </div>
+        <div class="question-form__group">
+          <textarea class="question-form__field question-form__field--textarea" name="question" aria-label="Опишите Ваш вопрос" placeholder="Опишите Ваш вопрос." required></textarea>
+        </div>
+        <button class="question-form__submit" type="submit">Отправить </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">Site footer</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

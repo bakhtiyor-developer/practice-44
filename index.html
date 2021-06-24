@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>44-dars</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- a11y - accessibility -->
+  <!-- i18n - internationalization -->
+
+  <header class="site-header">
+    <div>Site header</div>
+    <a class="js-open-modal" href="question.html">Modal</a>
+  </header>
+
+  <main class="site-content">
+    <div class="container">
+      <a class="js-open-modal" href="question.html">Modal</a>
+    </div>
+  </main>
+
+  <footer class="site-footer">Site footer</footer>
+
+
+
+  <!-- MODALS -->
+  <section class="question-modal modal">
+    <div class="modal__dialog">
+      <h2 class="visually-hidden">Авторизация и форма вопроса</h2>
+      <button class="modal__close-button js-close-modal" type="button" aria-label="Закрыть"></button>
+
+      <div class="question-modal__auth-form">
+        <section class="social-auth">
+          <h2 class="social-auth__heading">Авторизация:</h2>
+          <ul class="social-auth__list">
+            <li class="social-auth__item">
+              <a class="social-auth__link social-auth__link--google" href="#" target="_blank">Войти через Google</a>
+            </li>
+            <li class="social-auth__item">
+              <a class="social-auth__link social-auth__link--facebook" href="#" target="_blank">Войти через Facebook</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="modal-question">
+          <h2 class="modal-question__heading">Задать вопрос</h2>
+          <form class="question-form" action="https://vetclinic.ru/questions" method="POST">
+            <div class="question-form__group">
+              <input class="question-form__field" type="text" name="name" aria-label="Ваше имя" placeholder="Ваше имя" required>
+            </div>
+            <div class="question-form__group">
+              <textarea class="question-form__field question-form__field--textarea" name="question" aria-label="Опишите Ваш вопрос" placeholder="Опишите Ваш вопрос." required></textarea>
+            </div>
+            <button class="question-form__submit" type="submit">Отправить </button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
